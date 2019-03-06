@@ -21,21 +21,21 @@ create table db_school.sc
 );
 
 show tables from db_school;
-
-insert into db_school.student value (01, 'tom');
-insert into db_school.student value (02, 'bob');
 select *
 from db_school.student;
+insert into db_school.student value (01, 'tom');
+insert into db_school.student value (02, 'bob');
 
-insert into db_school.course value (11, 'math');
-insert into db_school.course value (12, 'Chinese');
 select *
 from db_school.course;
+insert into db_school.course value (11, 'math');
+insert into db_school.course value (12, 'Chinese');
 
-insert into db_school.sc value (01, 11);
-insert into db_school.sc value (02, 12);
 select *
 from db_school.sc;
+insert into db_school.sc value (01, 11);
+insert into db_school.sc value (02, 12);
+
 
 select db_school.sc.id,
        db_school.course.subject
