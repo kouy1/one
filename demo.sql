@@ -47,7 +47,8 @@ from scott.emp
 where comm < 100
    or comm is null;
 
-select e.*, d.*
+select e.ENAME, d.DNAME
 from scott.emp e
-       inner join scott.dept d
-                  on e.DEPTNO = d.DEPTNO;
+       right outer join scott.dept d
+                       on e.DEPTNO = d.DEPTNO;
+
