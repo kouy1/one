@@ -46,3 +46,8 @@ select *
 from scott.emp
 where comm < 100
    or comm is null;
+
+select e.*, d.*
+from scott.emp e
+       inner join scott.dept d
+                  on e.DEPTNO = d.DEPTNO;
