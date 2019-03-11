@@ -8,3 +8,4 @@ where DEPTNO = 30;
 select *
 from scott.v_emp;
 show tables from scott;
+
