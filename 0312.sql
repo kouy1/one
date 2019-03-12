@@ -62,9 +62,9 @@ insert into db_b.book value (null, 'c语言程序设计');
 insert into db_b.book value (null, 'java程序设计');
 
 -- 图书馆减书
-delete
-from db_b.book
-where id = 1;
+# delete
+# from db_b.book
+# where id = 1;
 
 -- 修改借书信息
 update db_b.book
