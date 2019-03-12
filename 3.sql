@@ -20,8 +20,10 @@ load data local infile 'D:\1.txt'
   (username, password, email)
   set id = null;
 
-select password, count(password)
+select SUBSTRING_INDEX(email, '@', -1) email类型, count(SUBSTRING_INDEX(email, '@', -1)) email出现次数
 from db_csda.user
-group by password
+group by SUBSTRING_INDEX(email, '@', -1)
 order by 2 desc
 limit 10 offset 0;
+
+
