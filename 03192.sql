@@ -24,22 +24,21 @@ create table db_Sale.Drugs
 drop table if exists db_Sale.records;
 create table db_Sale.records
 (
-  ID      int auto_increment not null primary key comment 'id nn pk',
+  ID        int auto_increment not null primary key comment 'id nn pk',
   PatientID INT comment 'PatientID fk',
-  price  decimal comment 'price'
+  price     decimal comment 'price'
 ) comment 'records table';
 
 
 drop table if exists db_Sale.recordsdetails;
 create table db_Sale.recordsdetails
 (
-  ID      int auto_increment not null primary key comment 'id nn pk',
+  ID        int auto_increment not null primary key comment 'id nn pk',
   recordsID INT comment 'recordsID fk',
-  DrugsID INT comment 'DrugsID fk',
-  num     int comment 'num ',
-  price  decimal comment 'price'
+  DrugsID   INT comment 'DrugsID fk',
+  num       int comment 'num ',
+  price     decimal comment 'price'
 ) comment 'recordsdetails table';
-
 
 
 
